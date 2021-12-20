@@ -7,12 +7,15 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("เทคโนโลยีสารสนเทศ"),
+          title: Text(
+            "เทคโนโลยีสารสนเทศ",
+            style: TextStyle(fontFamily: "Sarabun", fontSize: 25),
+          ),
           centerTitle: true,
           backgroundColor: Colors.deepPurple,
         ),
         body: Center(
-          child: Text("นักพัฒนาซอฟแวร์"),
+          child: Image.asset("assets/images/bird.jpg")
         ),
         floatingActionButton: FloatingActionButton(
           child: Text("+"),
@@ -24,7 +27,8 @@ void main() {
         bottomNavigationBar: BottomAppBar(
           child: Container(
             child: Center(
-              child: Text("วิทยาลัยเทคนิคตราด",style: TextStyle(color: Colors.white)),
+              child: Text("วิทยาลัยเทคนิคตราด",
+                  style: TextStyle(color: Colors.white,fontFamily: "Sarabun", fontSize: 18)),
             ),
             height: 40,
           ),
